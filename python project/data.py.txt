@@ -1,0 +1,17 @@
+import pandas as pd
+
+# Create a dictionary with sample car sales data
+data = {
+    'Model': ['Toyota', 'Honda', 'Ford', 'Chevrolet', 'Nissan'],
+    'Year': [2020, 2021, 2019, 2022, 2020],
+    'Price': [25000, 22000, 27000, 23000, 24000],
+    'Sales': [1500, 1200, 1400, 1600, 1300]
+}
+
+# Create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# Save the DataFrame to a CSV file
+df.to_csv('car_sales.csv', index=False)
+
+print('CSV file "car_sales.csv" created successfully.')
